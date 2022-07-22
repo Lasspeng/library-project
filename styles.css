@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 10px 0;
+}
+
+.container > div {
+  border-style: solid;
+  border-radius: 3px;
+  border-color: blue;
+  text-align: center;
+}
+
+form {
+  margin: 8px 0;
+  display: none;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
