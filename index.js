@@ -1,16 +1,17 @@
 const myLibrary = [];
-const container = document.querySelector('.container')
+const container = document.querySelector('.container');
 
-function Book(title, author, pages, completed) {
-  this.title = title
-  this.author = author
-  this.pages = pages
-  this.completed = completed
-  this.id = myLibrary.length
-  this.info = function() {
-    info = `${this.title} by ${this.author}, ${this.pages}, ${this.completed}`
-    console.log(info)
-    return info
+class Book {
+  constructor(title, author, pages, completed) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.completed = completed;
+  }
+  info() {
+    info = `${this.title} by ${this.author}, ${this.pages}, ${this.completed}`;
+    console.log(info);
+    return info;
   }
 }
 // Create DOM element and populate it with book data
